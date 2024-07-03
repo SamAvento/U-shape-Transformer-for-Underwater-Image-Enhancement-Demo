@@ -4,23 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Underwater Image Enhancement</title>
+    <title>Underwater Enhancement</title>
     <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Upload Your Underwater Image</h1>
-        <div class="upload-btn-wrapper">
-            <button id="uploadBtn">Upload Image</button>
-            <input type="file" id="fileInput" name="myfile" accept="image/*" />
+        <div class="tab">
+            <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Image')">Image Enhancement</button>
+            <button class="tablinks" onclick="openTab(event, 'Video')">Video Enhancement</button>
         </div>
-        <div id="previewContainer">
-            <button id="removeBtn">X</button>
-            <img id="imagePreview" src="" alt="Image Preview" />
+
+        <div id="Image" class="tabcontent">
+            <h1>Upload Your Underwater Image</h1>
+            <div class="upload-btn-wrapper">
+                <button id="uploadBtn">Upload Image</button>
+                <input type="file" id="fileInput" name="myfile" accept="image/*" />
+            </div>
+            <div id="previewContainer">
+                <button id="removeBtn">X</button>
+                <img id="imagePreview" src="" alt="Image Preview" />
+            </div>
+            <br><br>
+            <button id="enhanceBtn">Enhance Image</button>
         </div>
-        <br><br>
-        <button id="enhanceBtn">Enhance Image</button>
+
+        <div id="Video" class="tabcontent">
+            <h1>Upload Your Underwater Video</h1>
+            <div class="upload-btn-wrapper">
+                <button id="uploadVideoBtn">Upload Video</button>
+                <input type="file" id="videoFileInput" name="myfile" accept="video/*" />
+            </div>
+            <div id="videoPreviewContainer">
+                <button id="removeVideoBtn">X</button>
+                <video id="videoPreview" controls></video>
+            </div>
+            <br><br>
+            <button id="enhanceVideoBtn">Enhance Video</button>
+        </div>
     </div>
 
     <script src="/src/js/scripts.js"></script>
