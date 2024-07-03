@@ -7,4 +7,11 @@ Project - IE207.O21.CNCL
 | 1   | 20521180   | Trương Quốc Đạt |  
 | 2   | 20521570   | Nguyễn Sơn Long |  
 
-![image](https://github.com/SamAvento/U-shape-Transformer-for-Underwater-Image-Enhancement-Demo/assets/115160079/b7cbeaf1-b23d-463f-aa68-6c3a2fb283ec)
+Concept web:
+![image](https://github.com/SamAvento/U-shape-Transformer-for-Underwater-Image-Enhancement-Demo/assets/115160079/cb61c8a6-0501-44c2-82a4-92c3a69dd93d)  
+
+To run the project, do the following command lines:  
+```
+cd django_project
+python manage.py runserver
+```
