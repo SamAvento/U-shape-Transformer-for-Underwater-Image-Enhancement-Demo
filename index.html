@@ -21,12 +21,23 @@
                 <button id="uploadBtn">Upload Image</button>
                 <input type="file" id="fileInput" name="myfile" accept="image/*" />
             </div>
-            <div id="previewContainer">
-                <button id="removeBtn">X</button>
-                <img id="imagePreview" src="" alt="Image Preview" />
+            <div id="previewContainer" style="display: none;">
+                <div class="image-container">
+                    <img id="imagePreview" src="" alt="Image Preview" />
+                    <p id="beforeText" class="comparison-text" style="display: none;">Before</p>
+                </div>
+                <div class="image-container">
+                    <img id="enhancedImage" src="" alt="Enhanced Image" style="display: none;" />
+                    <p id="afterText" class="comparison-text" style="display: none;">After</p>
+                </div>
             </div>
             <br><br>
-            <button id="enhanceBtn">Enhance Image</button>
+            <button id="enhanceBtn" class="disabled" disabled>Enhance Image</button>
+            <div id="enhanceOptions" class="options">
+                <button id="downloadImageBtn">Download</button>
+                <button id="retryImageBtn">Retry</button>
+                <button id="clearAllImageBtn" style="background-color: red; color: white;">Clear All</button>
+            </div>
         </div>
 
         <div id="Video" class="tabcontent">
@@ -35,12 +46,23 @@
                 <button id="uploadVideoBtn">Upload Video</button>
                 <input type="file" id="videoFileInput" name="myfile" accept="video/*" />
             </div>
-            <div id="videoPreviewContainer">
-                <button id="removeVideoBtn">X</button>
-                <video id="videoPreview" controls></video>
+            <div id="videoPreviewContainer" style="display: none;">
+                <div class="video-container">
+                    <video id="videoPreview" controls></video>
+                    <p id="beforeVideoText" class="comparison-text" style="display: none;">Before</p>
+                </div>
+                <div class="video-container">
+                    <video id="enhancedVideo" controls style="display: none;"></video>
+                    <p id="afterVideoText" class="comparison-text" style="display: none;">After</p>
+                </div>
             </div>
             <br><br>
-            <button id="enhanceVideoBtn">Enhance Video</button>
+            <button id="enhanceVideoBtn" class="disabled" disabled>Enhance Video</button>
+            <div id="enhanceVideoOptions" class="options">
+                <button id="downloadVideoBtn">Download</button>
+                <button id="retryVideoBtn">Retry</button>
+                <button id="clearAllVideoBtn" style="background-color: red; color: white;">Clear All</button>
+            </div>
         </div>
     </div>
 
